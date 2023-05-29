@@ -1,0 +1,11 @@
+---
+  - hosts: localhost
+    tasks:
+    - name: "create a directory named test"
+      file:
+       path: /home/linuxhelp/test
+       state: directory
+    - name: "create a file in test directory"
+      file:
+       path: /home/linuxhelp/test/file.txt
+       state: touch
